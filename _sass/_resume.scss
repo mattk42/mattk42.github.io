@@ -1,0 +1,30 @@
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+div#experience, div#personal{
+  position: relative;
+  left: 160px;
+  width: 600px;
+}
+
+div#employer-logo {
+  position: absolute;
+  top: 10px;
+  left: -160px;
+}
+
+div#face {
+  position: absolute;
+  top: 0px;
+  left: -160px;
+}

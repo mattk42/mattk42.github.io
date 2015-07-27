@@ -1,0 +1,14 @@
+# Site settings
+title: mjknox.com
+owner_name: Matthew Knox
+email: mjknox@mjknox.com
+description: > # this means to ignore newlines until "baseurl:"
+  Matthew Knox is a DevOps enthusiast in Denver, CO. Matt spends his spare time
+  rescuing dogs, playing hockey, and exploring Colorado.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mjknox.com" # the base hostname & protocol for your site
+twitter_username: aboyne42
+github_username:  mattk42
+
+# Build settings
+markdown: kramdown
