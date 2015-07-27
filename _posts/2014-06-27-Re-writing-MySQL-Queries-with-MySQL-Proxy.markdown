@@ -21,27 +21,7 @@ But we were running out of options, so we took a bit of a risk and decided to im
 
 Since MySQL proxy is not meant for production just yet, we wanted to make sure we could handle a situation where it crashed. So we decided to put HAProxy infront of MySQL proxy, configured to pass traffic through straight to the database if the proxy is down. This is what the solution looks like:
 
-# MySQL Proxy Diagram
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+![MysqlProxy](/images/2014-06-27-Re-writing-MySQL-Queries-with-MySQL-Proxy/mysqlproxy.png)
 
 # HAProxy Configuration 
 (Note: we are using a xinetd script provided by Unai Rodriguez for healthchecks on the proxy, information on that can be found here):

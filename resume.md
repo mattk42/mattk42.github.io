@@ -48,7 +48,7 @@ System Administrator - Jul 2013 - Present
 
 <div id="experience">
 <div id="employer-logo">
-![TrackVia](/images/avaya.png)
+![Avaya](/images/avaya.png)
 </div>
 <h3>Avaya</h3>
 Software Engineer II - May 2011 - Jul 2013
@@ -61,7 +61,7 @@ Software Engineer II - May 2011 - Jul 2013
 
 <div id="experience">
 <div id="employer-logo">
-![TrackVia](/images/nmu.png)
+![Northern Michigan University](/images/nmu.png)
 </div>
 <h3>Northern Michigan University - Telecom</h3>
 Network Technician - Aug 2009 - May 2011
@@ -73,7 +73,7 @@ Network Technician - Aug 2009 - May 2011
 
 <div id="experience">
 <div id="employer-logo">
-![TrackVia](/images/wupx.png)
+![Radio X](/images/wupx.png)
 </div>
 <h3>Radio X</h3>
 IT Director - Jan 2008 - May 2011
@@ -85,7 +85,7 @@ IT Director - Jan 2008 - May 2011
 
 <div id="experience">
 <div id="employer-logo">
-![TrackVia](/images/intel.png)
+![Intel](/images/intel.png)
 </div>
 <h3>Intel</h3>
 Software Development Intern - May 2009 - Aug 2009
@@ -97,7 +97,7 @@ Software Development Intern - May 2009 - Aug 2009
 
 <div id="experience">
 <div id="employer-logo">
-![TrackVia](/images/nmu.png)
+![Northern Michigan University](/images/nmu.png)
 </div>
 <h3>Northern Michigan University - Housing </h3>
 Developer/Computer Technician - Nov 2008 - May 2009
