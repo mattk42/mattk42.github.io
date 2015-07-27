@@ -11,20 +11,27 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-div#experience, div#personal{
+div#experience-header{
   position: relative;
-  left: 160px;
-  width: 600px;
+  left: 40px;
+}
+
+div#experience-body{
 }
 
 div#employer-logo {
   position: absolute;
-  top: 10px;
-  left: -160px;
+  top: 5px;
+  left: -40px;
+  width: 30px;
+}
+
+div#personal{
+  text-align: center;
 }
 
 div#face {
-  position: absolute;
-  top: 0px;
-  left: -160px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
 }
