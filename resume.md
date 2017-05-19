@@ -15,22 +15,36 @@ permalink: /Resume/
 Developer, System Administrator, and DevOps Enthusiast \\
 Denver, CO\\
 Email: matt1988@gmail.com\\
-Phone: (303) 242-4469\\
 [http://www.mjknox.com](http://www.mjknox.com/)
 </div>
 
 ## Skills
 ---
 
-* **Programming Languages**: Bash, Python, Java, PHP
+* **Programming Languages**: Bash, Python, Java, PHP, Ruby, NodeJS
 * **Operating Systems**: Linux, BSD, OS X
 * **Databases**: MySQL, Amazon Aurora, Elasticsearch
 * **Monitoring**: Nagios/Icinga, Zabbix, Sensu
-* **Metrics**: Datadog, Collectd, Graphite
-* **Misc**: Git, Docker, Jenkins, CloudFormation, Terraform, AWS, Jenkins
+* **Metrics**: Datadog, Collectd, Graphite, InfluxDB
+* **Containers**: Docker, Kubernetes, Deis, Helm
+* **Cloud**: AWS, Google Cloud
+* **Misc**: Git, Jenkins, CloudFormation, Terraform, Travis
 
 ## Professional Experience
 ---
+<div id="experience-header">
+<div id="employer-logo">
+![Sphero](/images/sphero.png)
+</div>
+<h3>Sphero</h3>
+Senior DevOps Developer/Technical Security Lead\\
+Jan 2016 - Present
+</div>
+<div id="experience-body">
+* Migrated all existing applications from Heroku to our own Kubernetes cluster(s) running in Google Cloud.
+* Implemented consistent monitoring and metrics across diverse services.
+* Responsible for performing internal security audits as well as working with third party penetration tests.
+</div>
 
 <div id="experience-header">
 <div id="employer-logo"> 
@@ -38,7 +52,7 @@ Phone: (303) 242-4469\\
 </div>
 <h3>TrackVia</h3>
 System Administrator \\
-Jul 2013 - Present
+Jul 2013 - Jan 2016
 </div>
 <div id="experience-body">
 * Architected cloud based infrastructure for a java based SAAS product.

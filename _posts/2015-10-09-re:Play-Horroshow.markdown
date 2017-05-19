@@ -2,7 +2,7 @@
 layout: post
 title:  "Concerning Trend at AWS re:Play"
 date:   2015-10-09
-categories: women-in-tech re:invent
+categories: women-in-tech re_invent
 comments: true
 ---
 
