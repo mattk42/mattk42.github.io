@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   rescuing dogs, playing hockey, and exploring Colorado.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mjknox.com" # the base hostname & protocol for your site
-twitter_username: aboyne42
+twitter_username: mknox42
 github_username:  mattk42
 
 # Build settings
