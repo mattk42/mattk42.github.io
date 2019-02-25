@@ -13,7 +13,7 @@
     "precommit": "npm run lint",
     "test": "jest",
     "lint-fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.3",
