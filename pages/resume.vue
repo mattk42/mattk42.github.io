@@ -35,7 +35,7 @@
           <v-card-title primary-title>
             <div>
               <h3 class="headline mb-0" v-text="item.school" />
-              <v-subheader v-text="item.degree" />
+              <div v-text="item.degree" />
               <div v-text="item.other" />
             </div>
           </v-card-title>
@@ -115,8 +115,8 @@
     </v-card-title>
     <v-divider />
     <br>
-    <v-layout align-baseline justify-center row fill-height>
-      <v-flex v-for="(item,i) in community" :key="`comm${i}`" xs6>
+    <v-layout align-baseline justify-center wrap>
+      <v-flex v-for="(item,i) in community" :key="`comm${i}`" xs8 md4 grow>
         <v-card>
           <v-img aspect-ratio="2.75" :src="`${item.image}`" />
 
