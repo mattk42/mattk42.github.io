@@ -9,7 +9,7 @@
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-toolbar-items class="hidden-sm-and-down">
+      <v-toolbar-items>
         <v-btn fab href="https://github.com/mattk42" small>
           <v-avatar size="25">
             <img src="images/logos/octocat.png">
