@@ -76,14 +76,13 @@
     </div>
     <v-divider />
     <v-layout fill-height column>
-      <v-timeline>
+      <v-timeline dense>
         <v-timeline-item
           v-for="(item, i) in experience"
           :key="i"
           large
           color="#424242"
         >
-          <span slot="opposite" v-text="item.timeframe" />
           <v-avatar slot="icon">
             <img :src="item.logo">
           </v-avatar>
@@ -93,7 +92,10 @@
               :class="`elevation-${hover ? 12 : 3}`"
             >
               <v-card-title :class="`${item.color} justify-end`">
-                <h2 class="display-1 mr-3 white--text font-weight-bold" v-text="item.company" />
+                <v-flex>
+                  <h3 class="display-1 mr-3 white--text font-weight-bold" v-text="item.company" />
+                  <div v-text="item.timeframe" />
+                </v-flex>
               </v-card-title>
               <v-subheader v-text="item.title" />
               <v-card-text>
@@ -136,160 +138,160 @@
 <script>
 export default {
   data: () => ({
-    name: 'Matthew Knox',
-    email: 'mjknox@mjknox.com',
-    description: 'Developer, System Administrator, and DevOps Enthusiast',
-    location: 'Boulder, CO',
+    name: "Matthew Knox",
+    email: "mjknox@mjknox.com",
+    description: "Developer, System Administrator, and DevOps Enthusiast",
+    location: "Boulder, CO",
     education: [
       {
-        school: 'Northern Michigan University',
-        degree: 'Bachelor of Science, Computer Science',
-        minor: 'Mathematics',
-        timeframe: 'May 2011',
-        location: 'Marquette, MI',
-        other: 'Graduated Cum Laude',
-        image: '/images/nmubanner.png',
-        fillcolor: '#034030'
+        school: "Northern Michigan University",
+        degree: "Bachelor of Science, Computer Science",
+        minor: "Mathematics",
+        timeframe: "May 2011",
+        location: "Marquette, MI",
+        other: "Graduated Cum Laude",
+        image: "/images/nmubanner.png",
+        fillcolor: "#034030"
       }
     ],
     skills: {
-      'Programming Languages': [
-        'Bash',
-        'Python',
-        'Java',
-        'Ruby',
-        'NodeJS',
-        'PHP'
+      "Programming Languages": [
+        "Bash",
+        "Python",
+        "Java",
+        "Ruby",
+        "NodeJS",
+        "PHP"
       ],
-      Databases: ['MySQL', 'Amazon Aurora', 'Elasticsearch'],
-      Monitoring: ['Icinga', 'Zabbix', 'Sensu'],
-      Metrics: ['Datadog', 'Collectd', 'InfluxDB'],
-      Containers: ['Docker', 'Kubernetes', 'Deis', 'Helm'],
-      Cloud: ['AWS', 'Google Cloud'],
-      Misc: ['Git', 'Jenkins', 'CloudFormation', 'Terraform', 'Travis']
+      Databases: ["MySQL", "Amazon Aurora", "Elasticsearch"],
+      Monitoring: ["Icinga", "Zabbix", "Sensu"],
+      Metrics: ["Datadog", "Collectd", "InfluxDB"],
+      Containers: ["Docker", "Kubernetes", "Deis", "Helm"],
+      Cloud: ["AWS", "Google Cloud"],
+      Misc: ["Git", "Jenkins", "CloudFormation", "Terraform", "Travis"]
     },
     panelone: [false, false, false, false, false, false, false],
     experience: [
       {
-        company: 'Sphero',
-        color: 'blue lighten-1',
-        timeframe: 'Jan 2016 - Present',
-        title: 'Senior DevOps Developer/Technical Security Lead',
+        company: "Sphero",
+        color: "blue lighten-1",
+        timeframe: "Jan 2016 - Present",
+        title: "Senior DevOps Developer/Technical Security Lead",
         responsibilities: [
-          'Migrated all existing applications from Heroku to our own Kubernetes cluster(s) running in Google Cloud.',
-          'Implemented consistent monitoring and metrics across diverse services.',
-          'Responsible for performing internal security audits as well as working with third party penetration tests.'
+          "Migrated all existing applications from Heroku to our own Kubernetes cluster(s) running in Google Cloud.",
+          "Implemented consistent monitoring and metrics across diverse services.",
+          "Responsible for performing internal security audits as well as working with third party penetration tests."
         ],
-        logo: 'images/sphero.png'
+        logo: "images/sphero.png"
       },
       {
-        company: 'Trackvia',
-        timeframe: 'Jul 2013 - Jan 2016',
-        color: 'green',
-        title: 'System Administrator',
+        company: "Trackvia",
+        timeframe: "Jul 2013 - Jan 2016",
+        color: "green",
+        title: "System Administrator",
         responsibilities: [
-          'Architected cloud based infrastructure for a java based SAAS product.',
-          'Automated environment creation and release deployment.',
-          'Supported legacy perl/php application running under apache.',
-          'Responsible for tuning and maintaining both master/slave MySQL instances and Percona XtraDB Cluster.'
+          "Architected cloud based infrastructure for a java based SAAS product.",
+          "Automated environment creation and release deployment.",
+          "Supported legacy perl/php application running under apache.",
+          "Responsible for tuning and maintaining both master/slave MySQL instances and Percona XtraDB Cluster."
         ],
-        logo: 'images/xvia.jpeg'
+        logo: "images/xvia.jpeg"
       },
       {
-        company: 'Avaya',
-        timeframe: 'May 2011 - Jul 2013',
-        color: 'red',
-        title: 'Software Engineer II ',
+        company: "Avaya",
+        timeframe: "May 2011 - Jul 2013",
+        color: "red",
+        title: "Software Engineer II ",
         responsibilities: [
-          'Planned and maintained a VMware based lab for capacity testing, running 175 virtual machines across 5 VMware servers.',
-          'Known for my flexibility and ability to work in all areas of our code base.',
-          'Develop management software for a RedHat based project. Mainly focused on the installer, RPMs, and platform management scripts.',
-          'Lead developer for efforts to move our product into the cloud.'
+          "Planned and maintained a VMware based lab for capacity testing, running 175 virtual machines across 5 VMware servers.",
+          "Known for my flexibility and ability to work in all areas of our code base.",
+          "Develop management software for a RedHat based project. Mainly focused on the installer, RPMs, and platform management scripts.",
+          "Lead developer for efforts to move our product into the cloud."
         ],
-        logo: 'images/avaya.png'
+        logo: "images/avaya.png"
       },
       {
-        company: 'Northern Michigan University - Telecom',
-        timeframe: 'Aug 2009 - May 2011',
-        color: 'green lighten-1',
-        title: 'Network Technician',
+        company: "Northern Michigan University - Telecom",
+        timeframe: "Aug 2009 - May 2011",
+        color: "green lighten-1",
+        title: "Network Technician",
         responsibilities: [
-          'Maintained phone and data networks on campus.',
-          'Used nagios as well as custom scripts for monitoring network health.',
-          'Worked with analog and digital phone systems along with Wi-Fi, WiMAX, and wired data networks.'
+          "Maintained phone and data networks on campus.",
+          "Used nagios as well as custom scripts for monitoring network health.",
+          "Worked with analog and digital phone systems along with Wi-Fi, WiMAX, and wired data networks."
         ],
-        logo: '/images/nmu.png'
+        logo: "/images/nmu.png"
       },
       {
-        company: 'Radio X',
-        timeframe: 'Jan 2008 - May 2011',
-        color: 'black',
-        title: 'IT Director',
+        company: "Radio X",
+        timeframe: "Jan 2008 - May 2011",
+        color: "black",
+        title: "IT Director",
         responsibilities: [
-          'Lead the conversion from a Windows based architecture to Linux.',
-          'Built internal cataloging system, local music database, and blog system.',
-          'Maintained a Linux based server dedicated to our web based catalog system and online audio stream.'
+          "Lead the conversion from a Windows based architecture to Linux.",
+          "Built internal cataloging system, local music database, and blog system.",
+          "Maintained a Linux based server dedicated to our web based catalog system and online audio stream."
         ],
-        logo: '/images/wupx.png'
+        logo: "/images/wupx.png"
       },
       {
-        company: 'Intel',
-        timeframe: 'May 2009 - Aug 2009',
-        color: 'blue',
-        title: 'Software Development Intern',
+        company: "Intel",
+        timeframe: "May 2009 - Aug 2009",
+        color: "blue",
+        title: "Software Development Intern",
         responsibilities: [
-          'Developed software for viewing hardware test results and scheduling new tests.',
-          'Administered MSSQL database for storing hardware test results.',
-          'Computer Technician'
+          "Developed software for viewing hardware test results and scheduling new tests.",
+          "Administered MSSQL database for storing hardware test results.",
+          "Computer Technician"
         ],
-        logo: '/images/intel.png'
+        logo: "/images/intel.png"
       },
       {
-        company: 'Northern Michigan University - Housing ',
-        timeframe: 'Nov 2008 - May 2009',
-        color: 'green lighten-1',
-        title: 'Developer/Computer Technician',
+        company: "Northern Michigan University - Housing ",
+        timeframe: "Nov 2008 - May 2009",
+        color: "green lighten-1",
+        title: "Developer/Computer Technician",
         responsibilities: [
-          'Customized an online housing application using PHP, Smarty, and Oracle.',
-          'Maintained computer equipment within the office, including employee workstations and four windows based servers.'
+          "Customized an online housing application using PHP, Smarty, and Oracle.",
+          "Maintained computer equipment within the office, including employee workstations and four windows based servers."
         ],
-        logo: '/images/nmu.png'
+        logo: "/images/nmu.png"
       }
     ],
     community: [
       {
-        title: 'DevOpsDays Denver',
-        position: 'Organizer',
-        timeframe: 'July 2014 - Current',
+        title: "DevOpsDays Denver",
+        position: "Organizer",
+        timeframe: "July 2014 - Current",
         points: [
-          'Work with fellow community members planning the annual DevOpsDays event in Denver.',
-          'Promote the event to the community through meetups and social events.'
+          "Work with fellow community members planning the annual DevOpsDays event in Denver.",
+          "Promote the event to the community through meetups and social events."
         ],
-        image: '/images/dod.png'
+        image: "/images/dod.png"
       },
       {
-        title: '2018 SnowFroc Conference',
-        position: 'Speaker',
-        timeframe: 'March 2018',
+        title: "2018 SnowFroc Conference",
+        position: "Speaker",
+        timeframe: "March 2018",
         points: [
-          'Collaborated with the Senior Director of Application Security at Applied Trust on a talk about Security and DevOps in IoT.',
-          'Presented the same talk to the Colorado Electronic Crimes Task Force of the United States Secret Service.'
+          "Collaborated with the Senior Director of Application Security at Applied Trust on a talk about Security and DevOps in IoT.",
+          "Presented the same talk to the Colorado Electronic Crimes Task Force of the United States Secret Service."
         ],
-        image: '/images/snowfroc.png'
+        image: "/images/snowfroc.png"
       },
       {
-        title: 'DevOps Denver Meetup',
-        position: 'CoFounder',
-        timeframe: 'August 2013 - Jan 2016',
+        title: "DevOps Denver Meetup",
+        position: "CoFounder",
+        timeframe: "August 2013 - Jan 2016",
         points: [
-          'Co-Founded the meetup to help create a more inclusive DevOps community in the Denver area.',
-          'Worked with local community members to find hosting, funding, and informative speakers.',
-          'Presented talks on various aspects of AWS as well as personal projects and interesting technologies'
+          "Co-Founded the meetup to help create a more inclusive DevOps community in the Denver area.",
+          "Worked with local community members to find hosting, funding, and informative speakers.",
+          "Presented talks on various aspects of AWS as well as personal projects and interesting technologies"
         ],
         image:
-          'https://secure.meetupstatic.com/s/img/7223371979728590/app_download/social/fb/meetup.en.png'
+          "https://secure.meetupstatic.com/s/img/7223371979728590/app_download/social/fb/meetup.en.png"
       }
     ]
   })
-}
+};
 </script>
