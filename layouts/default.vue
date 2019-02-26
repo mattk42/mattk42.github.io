@@ -29,7 +29,6 @@
     </v-toolbar>
 
     <v-navigation-drawer
-      v-model="drawer"
       :mini-variant="false"
       :clipped="true"
       align-end
