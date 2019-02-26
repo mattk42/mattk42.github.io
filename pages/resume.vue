@@ -182,7 +182,7 @@ export default {
           "Implemented consistent monitoring and metrics across diverse services.",
           "Responsible for performing internal security audits as well as working with third party penetration tests."
         ],
-        logo: "images/sphero.png"
+        logo: "/images/sphero.png"
       },
       {
         company: "Trackvia",
@@ -195,7 +195,7 @@ export default {
           "Supported legacy perl/php application running under apache.",
           "Responsible for tuning and maintaining both master/slave MySQL instances and Percona XtraDB Cluster."
         ],
-        logo: "images/xvia.jpeg"
+        logo: "/images/xvia.jpeg"
       },
       {
         company: "Avaya",
@@ -208,7 +208,7 @@ export default {
           "Develop management software for a RedHat based project. Mainly focused on the installer, RPMs, and platform management scripts.",
           "Lead developer for efforts to move our product into the cloud."
         ],
-        logo: "images/avaya.png"
+        logo: "/images/avaya.png"
       },
       {
         company: "Northern Michigan University - Telecom",
