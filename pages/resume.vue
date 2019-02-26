@@ -27,7 +27,7 @@
     <v-divider />
     <br>
     <v-layout align-baseline justify-center row fill-height>
-      <v-flex v-for="(item,i) in education" :key="`comm${i}`" xs6>
+      <v-flex v-for="(item,i) in education" :key="`comm${i}`" xs12 md6>
         <v-card>
           <div :style="`background-color: ${item.fillcolor}`">
             <v-img height="100px" contain :src="`${item.image}`" />
