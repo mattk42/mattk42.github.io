@@ -76,13 +76,15 @@
     </div>
     <v-divider />
     <v-layout fill-height column>
-      <v-timeline dense>
+      <v-timeline :dense="$vuetify.breakpoint.xsOnly">
         <v-timeline-item
           v-for="(item, i) in experience"
           :key="i"
           large
           color="#424242"
         >
+
+          <span slot="opposite" class="hidden-xs-only" v-text="item.timeframe" />
           <v-avatar slot="icon">
             <img :src="item.logo">
           </v-avatar>
@@ -94,7 +96,7 @@
               <v-card-title :class="`${item.color} justify-end`">
                 <v-flex>
                   <h3 class="display-1 mr-3 white--text font-weight-bold" v-text="item.company" />
-                  <div v-text="item.timeframe" />
+                  <div class="hidden-sm-and-up" v-text="item.timeframe" />
                 </v-flex>
               </v-card-title>
               <v-subheader v-text="item.title" />
