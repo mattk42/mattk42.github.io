@@ -29,6 +29,7 @@
     </v-toolbar>
 
     <v-navigation-drawer
+      v-model="drawer"
       :mini-variant="false"
       :clipped="true"
       align-end
@@ -74,7 +75,7 @@
 export default {
   data() {
     return {
-      drawer: true,
+      drawer: false,
       fixed: false,
       items: [
         {
