@@ -83,7 +83,6 @@
           large
           color="#424242"
         >
-
           <span slot="opposite" class="hidden-xs-only" v-text="item.timeframe" />
           <v-avatar slot="icon">
             <img :src="item.logo">
