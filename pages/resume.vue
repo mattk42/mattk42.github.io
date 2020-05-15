@@ -174,9 +174,17 @@ export default {
     panelone: [false, false, false, false, false, false, false],
     experience: [
       {
+        company: "Splunk",
+        color: "green",
+        timeframe: "March 2019 - Present",
+        title: "Senior Site Reliability Engineer",
+        responsibilities: [],
+        logo: "/images/splunk.png"
+      },
+      {
         company: "Sphero",
         color: "blue lighten-1",
-        timeframe: "Jan 2016 - Present",
+        timeframe: "Jan 2016 - March 2019",
         title: "Senior DevOps Developer/Technical Security Lead",
         responsibilities: [
           "Migrated all existing applications from Heroku to our own Kubernetes cluster(s) running in Google Cloud.",
