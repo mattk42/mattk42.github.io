@@ -20,7 +20,7 @@
             <img src="~/assets/images/Twitter_logo.svg">
           </v-avatar>
         </v-btn>
-        <v-btn fab href="mailto:mjknox@mjknox.com" small>
+        <v-btn fab href="mailto:matt@knox.software" small>
           <v-avatar size="25">
             <img src="~/assets/images/Email_logo.png">
           </v-avatar>
@@ -41,6 +41,7 @@
           v-for="(item, i) in items"
           :key="i"
           :to="item.to"
+          :disabled="item.disabled"
           router
           exact
         >
@@ -66,7 +67,7 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; 2019</span>
+      <span>&copy; 2020</span>
     </v-footer>
   </v-app>
 </template>
@@ -84,8 +85,19 @@ export default {
           to: "/"
         },
         {
-          icon: "apps",
-          title: "Resume",
+          icon: "build",
+          title: "Projects",
+          to: "/projects",
+          disabled: true
+        },
+        {
+          icon: "code",
+          title: "CTF Writeups",
+          to: "/ctf"
+        },
+        {
+          icon: "receipt",
+          title: "whoami",
           to: "/resume"
         }
       ],
