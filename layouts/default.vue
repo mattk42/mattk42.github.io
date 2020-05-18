@@ -12,7 +12,7 @@
       <v-toolbar-items>
         <v-btn fab href="https://github.com/mattk42" small>
           <v-avatar size="25">
-            <img src="images/logos/octocat.png">
+            <img src="~/assets/images/Github.png">
           </v-avatar>
         </v-btn>
         <v-btn fab href="https://twitter.com/mknox42" small>
