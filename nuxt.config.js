@@ -1,5 +1,20 @@
+import path from "path";
+import FMMode from "frontmatter-markdown-loader/mode";
+const fs = require("fs");
 const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
 const pkg = require("./package");
+
+function walkDir(dir) {
+  let dirs = [dir];
+  fs.readdirSync(dir).forEach(f => {
+    const dirPath = path.join(dir, f);
+    const isDirectory = fs.statSync(dirPath).isDirectory();
+    if (isDirectory) {
+      dirs = dirs.concat(walkDir(dirPath));
+    }
+  });
+  return dirs;
+}
 
 module.exports = {
   mode: "universal",
@@ -40,21 +55,6 @@ module.exports = {
   plugins: ["@/plugins/vuetify"],
 
   /*
-  ** Nuxt.js modules
-  */
-  modules: ["@nuxtjs/markdownit"],
-
-  // [optional] markdownit options
-  // See https://github.com/markdown-it/markdown-it
-  markdownit: {
-    preset: "default",
-    linkify: true,
-    breaks: true,
-    html: true,
-    use: ["markdown-it-attrs"]
-  },
-
-  /*
   ** Build configuration
   */
   build: {
@@ -79,11 +79,17 @@ module.exports = {
           exclude: /(node_modules)/
         });
       }
-      /*    config.module.rules.push({
-        test: /\.styl$/,
-        loader: 'style-loader!css-loader!stylus-loader',
-        exclude: /(node_modules)/
-      }); */
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: "frontmatter-markdown-loader",
+        include: walkDir(path.resolve(__dirname, "content")),
+        options: {
+          mode: [FMMode.VUE_COMPONENT],
+          vue: {
+            root: "markdown-body"
+          }
+        }
+      });
     }
   }
 };

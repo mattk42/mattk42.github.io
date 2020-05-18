@@ -140,7 +140,7 @@
 export default {
   data: () => ({
     name: "Matthew Knox",
-    email: "mjknox@mjknox.com",
+    email: "matt@knox.software",
     description: "Developer, System Administrator, and DevOps Enthusiast",
     location: "Boulder, CO",
     education: [
